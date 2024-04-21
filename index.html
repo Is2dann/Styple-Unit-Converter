@@ -152,6 +152,40 @@
                     <p id="lengthResult">So, walk or drive?</p>
                 </div>
             </div>
+            <!-- Speed option -->
+            <div class="options" id="speed">
+                <h2 class="cat-title"><i class="fa-solid fa-gauge"></i> Speed <i class="fa-solid fa-gauge"></i></h2>
+                <input type="number" id="speedInput" class="input" placeholder="How fast (or slow) is it?"><br>
+                <select id="fromSpeed" class="unit-select">
+                    <option value="ftperm">Feet/Minute (ft/min)</option>
+                    <option value="ftpers">Feet/Second (ft/s)</option>
+                    <option value="kmperh">Kilometers/Hour (km/h)</option>
+                    <option value="knot">Knot (knot)</option>
+                    <option value="lightspeed">Speed of Light (c(v))</option>
+                    <option value="mileperh">Mile/Hour (mph)</option>
+                    <option value="mpers">Meter/Second (m/s)</option>
+                    <option value="soundspeedair">Speed of Sound (air) (Mach(a))</option>
+                    <option value="soundspeedwater">Speed of Sound (water) (Mach(w))</option>
+                </select>
+                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                <select id="toSpeed" class="unit-select">
+                    <option value="ftperm">Feet/Minute (ft/min)</option>
+                    <option value="ftpers">Feet/Second (ft/s)</option>
+                    <option value="kmperh">Kilometers/Hour (km/h)</option>
+                    <option value="knot">Knot (knot)</option>
+                    <option value="lightspeed">Speed of Light (c(v))</option>
+                    <option value="mileperh">Mile/Hour (mph)</option>
+                    <option value="mpers">Meter/Second (m/s)</option>
+                    <option value="soundspeedair">Speed of Sound (air) (Mach(a))</option>
+                    <option value="soundspeedwater">Speed of Sound (water) (Mach(w))</option>
+                </select>
+                <button id="speedButton" class="convert-button">
+                    Show Me <i class="fa-sharp fa-solid fa-repeat"></i>
+                </button>
+                <div class="result">
+                    <p id="speedResult">So, need any upgrades?</p>
+                </div>
+            </div>
     </div>
     
     <!-- Link for Javascript -->
