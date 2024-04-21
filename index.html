@@ -36,6 +36,50 @@
             <option value="time">Time</option>
             <option value="weight">Weight</option>
         </select>
+        <!-- this div will contain all the options that will display when chosen -->
+        <div class="container">
+            <!-- Area option -->
+            <div class="options" id="area">
+                <h2 class="cat-title"><i class="fa-solid fa-ruler-combined"></i> Area <i class="fa-solid fa-ruler-combined"></i></h2>
+                <input type="number" id="areaInput" class="input" placeholder="How big is your garden?"><br>
+                <select id="fromArea" class="unit-select">
+                    <option value="acre">Acre (acre)</option>
+                    <option value="are">Are (a)</option>
+                    <option value="hectare">Hectare (ha)</option>
+                    <option value="sqCentimeter">Square Centimeter (cm2)</option>
+                    <option value="sqDecimeter">Square Decimeter (dm2)</option>
+                    <option value="sqFoot">Square Foot (ft2)</option>
+                    <option value="sqInch">Square Inch (in2)</option>
+                    <option value="sqMeter">Square Meter (m2)</option>
+                    <option value="sqMile">Square Mile (mile2)</option>
+                    <option value="sqMillimeter">Square Millimeter (mm2)</option>
+                    <option value="sqKilometer">Square Kilometer (km2)</option>
+                    <option value="sqYard">Square Yard (yd2)</option>
+                </select>
+                <!-- an arrow icon from font awesome -->
+                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                <select id="toArea" class="unit-select">
+                    <option value="acre">Acre (acre)</option>
+                    <option value="are">Are (a)</option>
+                    <option value="hectare">Hectare (ha)</option>
+                    <option value="sqCentimeter">Square Centimeter (cm2)</option>
+                    <option value="sqDecimeter">Square Decimeter (dm2)</option>
+                    <option value="sqFoot">Square Foot (ft2)</option>
+                    <option value="sqInch">Square Inch (in2)</option>
+                    <option value="sqMeter">Square Meter (m2)</option>
+                    <option value="sqMile">Square Mile (mile2)</option>
+                    <option value="sqMillimeter">Square Millimeter (mm2)</option>
+                    <option value="sqKilometer">Square Kilometer (km2)</option>
+                    <option value="sqYard">Square Yard (yd2)</option>
+                </select>
+                <!-- this button will do the conversion when clicked -->
+                <button id="areaButton" class="convert-button">
+                    Show Me <i class="fa-sharp fa-solid fa-repeat"></i>
+                </button>
+                <div class="result">
+                    <p id="areaResult">Will a football pitch fit?</p>
+                </div>
+            </div>
     </div>
     
     <!-- Link for Javascript -->
