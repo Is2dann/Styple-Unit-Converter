@@ -5,7 +5,7 @@ mockup image...
 This simple unit converter would be a useful tool to all who will need it. It is smart yet funny and stylish to be a bit more fun to use than just a regular unit converter can be found on the web.
 The name has been made by merge the "style" and "simple" words together.
 
-Try it yourself here: link...
+Try it yourself here:  https://is2dann.github.io/Styple-Unit-Converter/
 
 ## User stories
 |Story No.|Story|
