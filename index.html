@@ -186,6 +186,28 @@
                     <p id="speedResult">So, need any upgrades?</p>
                 </div>
             </div>
+            <!-- Temperature option -->
+            <div class="options" id="temperature">
+                <h2 class="cat-title"><i class="fa-solid fa-temperature-half"></i> Temperature <i class="fa-solid fa-temperature-half"></i></h2>
+                <input type="number" id="tempInput" class="input" placeholder="How hot is it?"><br>
+                <select id="fromTemp" class="unit-select">
+                    <option value="celsius">Celsius °C</option>
+                    <option value="kelvin">Kelvin °K</option>
+                    <option value="fahrenheit">Fahrenheit °F</option>
+                </select>
+                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                <select id="toTemp" class="unit-select">
+                    <option value="celsius">Celsius °C</option>
+                    <option value="kelvin">Kelvin °K</option>
+                    <option value="fahrenheit">Fahrenheit °F</option>
+                </select>
+                <button id="tempButton" class="convert-button">
+                    Show Me <i class="fa-sharp fa-solid fa-repeat"></i>
+                </button>
+                <div class="result">
+                    <p id="tempResult">So, aircon or radiator?</p>
+                </div>
+            </div>
     </div>
     
     <!-- Link for Javascript -->
