@@ -208,6 +208,44 @@
                     <p id="tempResult">So, aircon or radiator?</p>
                 </div>
             </div>
+            <!-- Time option -->
+            <div class="options" id="time">
+                <h2 class="cat-title"><i class="fa-solid fa-clock"></i> Time <i class="fa-solid fa-clock"></i></h2>
+                <input type="number" id="timeInput" class="input" placeholder="When it happened?"><br>
+                <select id="fromTime" class="unit-select">
+                    <option value="calendaryear">Calendar Year (y)</option>
+                    <option value="century">Century (c)</option>
+                    <option value="day">Day (dy)</option>
+                    <option value="decade">Decade (dec)</option>
+                    <option value="hour">Hour (hr)</option>
+                    <option value="millenium">Millenium (m)</option>
+                    <option value="millisecond">Millisecond (ms)</option>
+                    <option value="minute">Minute (min)</option>
+                    <option value="month">Month (mo)</option>
+                    <option value="second">Second (sec)</option>
+                    <option value="week">Week (wk)</option>                    
+                </select>
+                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                <select id="toTime" class="unit-select">
+                    <option value="calendaryear">Calendar Year (y)</option>
+                    <option value="century">Century (c)</option>
+                    <option value="day">Day (dy)</option>
+                    <option value="decade">Decade (dec)</option>
+                    <option value="hour">Hour (hr)</option>
+                    <option value="millenium">Millenium (m)</option>
+                    <option value="millisecond">Millisecond (ms)</option>
+                    <option value="minute">Minute (min)</option>
+                    <option value="month">Month (mo)</option>
+                    <option value="second">Second (sec)</option>
+                    <option value="week">Week (wk)</option>
+                </select>
+                <button id="timeButton" class="convert-button">
+                    Show Me <i class="fa-sharp fa-solid fa-repeat"></i>
+                </button>
+                <div class="result">
+                    <p id="timeResult">Long time ago in a galaxy far far away...</p>
+                </div>
+            </div>
     </div>
     
     <!-- Link for Javascript -->
