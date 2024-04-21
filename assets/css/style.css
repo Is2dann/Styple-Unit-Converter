@@ -1,0 +1,10 @@
+body {
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    font-family: papyrus;
+    background-image: radial-gradient(rgb(20, 178, 226), darkblue);
+    overflow: hidden;
+    margin: 0;
+    cursor: pointer;    
+}
