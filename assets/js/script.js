@@ -79,7 +79,7 @@ document.getElementById('speedButton').addEventListener('click', speedFunc);
     }
   });
 
-// returns the (temp) options convert button to apply the relevant function when clicked
+// returns the (temperature) options convert button to apply the relevant function when clicked
 document.getElementById('tempButton').addEventListener('click', tempFunc);
   // enter key works as click
   let eInputte = document.getElementById('tempInput');
@@ -87,5 +87,16 @@ document.getElementById('tempButton').addEventListener('click', tempFunc);
     if (event.key === 'Enter') {
       event.preventDefault();
       document.getElementById('tempButton').click();
+    }
+  });
+
+// returns the (time) options convert button to apply the relevant function when clicked
+document.getElementById('timeButton').addEventListener('click', timeFunc);
+  // enter key works as click
+  let eInputti = document.getElementById('timeInput');
+  eInputti.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      document.getElementById('timeButton').click();
     }
   });
