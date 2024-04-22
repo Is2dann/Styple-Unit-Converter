@@ -18,3 +18,7 @@ function update() {
     // finally apply the text into html page
   document.getElementById('move-left1').innerHTML = moveLeft1;
 }
+
+// choose all elements with .options class name and make them hidden
+let optionInput = document.querySelectorAll('.options');
+  optionInput.forEach((opt) => (opt.style.display = 'none'));
