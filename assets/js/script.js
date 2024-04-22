@@ -32,3 +32,16 @@ let category = document.getElementById('convCat');
     // added style to display the options correctly when chosen
     document.getElementById(perInput).style.display = 'block';
 });
+
+// returns the (area) options convert button to apply the relevant function when clicked
+document.getElementById('areaButton').addEventListener('click', areaFunc);
+  // enter key works as click
+  // this to call the enter key function in the input box when the user types in desired value
+  let eInputa = document.getElementById('areaInput');
+  eInputa.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      // this to call the function to work as the submit button
+      document.getElementById('areaButton').click();
+    }
+  });
