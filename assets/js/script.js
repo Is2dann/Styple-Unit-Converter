@@ -67,3 +67,14 @@ document.getElementById('lengthButton').addEventListener('click', lengthFunc);
       document.getElementById('lengthButton').click();
     }
   });
+
+// returns the (speed) options convert button to apply the relevant function when clicked
+document.getElementById('speedButton').addEventListener('click', speedFunc);
+  // enter key works as click
+  let eInputs = document.getElementById('speedInput');
+  eInputs.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      document.getElementById('speedButton').click();
+    }
+  });
