@@ -161,3 +161,29 @@ function dataFunc() {
   let result = inputNum * (units[toUnit] / units[fromUnit]);
   document.getElementById('dataResult').textContent = `Result: ${result.toFixed(3)}`;
 }
+
+  // for Length
+function lengthFunc() {
+  let inputNum = parseFloat(document.getElementById('lengthInput').value);
+  let fromUnit = document.getElementById('fromLength').value;
+  let toUnit = document.getElementById('toLength').value;
+  let units = {
+    centimeter: 100,
+    chain: 0.049709,
+    decimeter: 10,
+    feet: 3.28083,
+    furlong: 0.0049709,
+    inch: 39.37007,
+    kilometer: 0.001,
+    league: 0.000207123,
+    // chose meter as base value
+    meter: 1,
+    mile: 0.000621371,
+    millimeter: 1000,
+    nauticalmile: 0.0005399,
+    rod: 0.19883,
+    yard: 1.09361,
+  };
+  let result = inputNum * (units[toUnit] / units[fromUnit]);
+  document.getElementById('lengthResult').textContent = `Result: ${result.toFixed(3)}`;
+}
