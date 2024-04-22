@@ -22,3 +22,13 @@ function update() {
 // choose all elements with .options class name and make them hidden
 let optionInput = document.querySelectorAll('.options');
   optionInput.forEach((opt) => (opt.style.display = 'none'));
+
+  // make selected options visible only
+let category = document.getElementById('convCat');
+  category.addEventListener('change', function() {
+    // this to call back the hidden option that has been clicked on
+    let perInput = category.value;
+    optionInput.forEach((opt) => (opt.style.display = 'none'));
+    // added style to display the options correctly when chosen
+    document.getElementById(perInput).style.display = 'block';
+});
