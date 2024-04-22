@@ -214,7 +214,8 @@ function tempFunc() {
   let inputNum = parseFloat(document.getElementById('tempInput').value);
   let fromUnit = document.getElementById('fromTemp').value;
   let toUnit = document.getElementById('toTemp').value;
-  // Here I used if/else as temperature values are cannot be determined with only 1 arithmetical operation  
+  // Here I used if/else as temperature values are cannot be determined with only 1 arithmetical operation 
+  // to work out this formula I had help from www.shecodes.io 
   let result;
     if (fromUnit === 'celsius' && toUnit === 'fahrenheit') {
       result = (inputNum * 9) / 5 + 32;
@@ -232,4 +233,27 @@ function tempFunc() {
       result = inputNum;
     }
       document.getElementById('tempResult').textContent = `Result: ${result.toFixed(3)}`;
+}
+
+  // for Time
+function timeFunc() {
+  let inputNum = parseFloat(document.getElementById('timeInput').value);
+  let fromUnit = document.getElementById('fromTime').value;
+  let toUnit = document.getElementById('toTime').value;
+  let units = {
+    calendaryear: 1 / 31536000,
+    century: 1 / 3153600000,
+    day: 1 / 86400,
+    decade: 1 / 315360000,
+    hour: 1 / 3600,
+    millenium: 1 / 31536000000,
+    millisecond: 1000,
+    minute: 1 / 60,
+    month: 1 / 2628000,
+    // chose seconds as base value
+    second: 1,
+    week: 1 / 604800,
+  };
+  let result = inputNum * (units[toUnit] / units[fromUnit]);
+  document.getElementById('timeResult').textContent = `Result: ${result.toFixed(3)}`;
 }
