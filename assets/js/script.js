@@ -45,3 +45,14 @@ document.getElementById('areaButton').addEventListener('click', areaFunc);
       document.getElementById('areaButton').click();
     }
   });
+
+// returns the (data) options convert button to apply the relevant function when clicked
+document.getElementById('dataButton').addEventListener('click', dataFunc);
+  // enter key works as click
+  let eInputd = document.getElementById('dataInput');
+  eInputd.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      document.getElementById('dataButton').click();
+    }
+  });
