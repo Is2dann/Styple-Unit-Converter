@@ -114,32 +114,50 @@ document.getElementById('weightButton').addEventListener('click', weightFunc);
 
 // and here are the functions for them
   // for Area 
-  function areaFunc() {
-    // parseFloat to make floating numbers for more accurate results
-    let inputNum = parseFloat(document.getElementById('areaInput').value);
-    // the value of what we want to convert from
-    let fromUnit = document.getElementById('fromArea').value;
-    // the value of what we want to convert to
-    let toUnit = document.getElementById('toArea').value;
-    // factors can be set easily as only multiplication can be used to determine them
-    let units = {
-      acre: 0.000247105,
-      are: 0.01,
-      hectare: 0.0001,
-      sqCentimeter: 10000,
-      sqDecimeter: 100,
-      sqFoot: 10.7639,
-      sqInch: 1550.0031,
-      // chose sqMeter as base value all the others compared to it
-      sqMeter: 1,
-      sqMile: 3.861e-7,
-      sqMillimeter: 1000000,
-      sqKilometer: 0.000001,
-      sqYard: 1.19599,
-    };
-      // add a little basic math to the function
-    let result = inputNum * (units[toUnit] / units[fromUnit]);
-    // to show the results on the html page by changing the original text to the result
-    // toFixed(3), to limit digits after decimal to 3
-    document.getElementById('areaResult').textContent = `Result: ${result.toFixed(3)}`;
-  }
+function areaFunc() {
+  // parseFloat to make floating numbers for more accurate results
+  let inputNum = parseFloat(document.getElementById('areaInput').value);
+  // the value of what we want to convert from
+  let fromUnit = document.getElementById('fromArea').value;
+  // the value of what we want to convert to
+  let toUnit = document.getElementById('toArea').value;
+  // factors can be set easily as only multiplication can be used to determine them
+  let units = {
+    acre: 0.000247105,
+    are: 0.01,
+    hectare: 0.0001,
+    sqCentimeter: 10000,
+    sqDecimeter: 100,
+    sqFoot: 10.7639,
+    sqInch: 1550.0031,
+    // chose sqMeter as base value all the others compared to it
+    sqMeter: 1,
+    sqMile: 3.861e-7,
+    sqMillimeter: 1000000,
+    sqKilometer: 0.000001,
+    sqYard: 1.19599,
+  };
+    // add a little basic math to the function
+  let result = inputNum * (units[toUnit] / units[fromUnit]);
+  // to show the results on the html page by changing the original text to the result
+  // toFixed(3), to limit digits after decimal to 3
+  document.getElementById('areaResult').textContent = `Result: ${result.toFixed(3)}`;
+}
+
+  // for Data
+function dataFunc() {
+  let inputNum = parseFloat(document.getElementById('dataInput').value);
+  let fromUnit = document.getElementById('fromData').value;
+  let toUnit = document.getElementById('toData').value;
+  let units = {
+    bit: 8192,
+    byte: 1024,
+    gigabyte: 0.000000953674,
+    // chose kilobyte as base value
+    kilobyte: 1,
+    megabyte: 0.000976562,
+    terabyte: 0.000000000931322,
+  };
+  let result = inputNum * (units[toUnit] / units[fromUnit]);
+  document.getElementById('dataResult').textContent = `Result: ${result.toFixed(3)}`;
+}
