@@ -208,3 +208,28 @@ function speedFunc() {
   let result = inputNum * (units[toUnit] / units[fromUnit]);
   document.getElementById('speedResult').textContent = `Result: ${result.toFixed(3)}`;
 }
+
+  // for Temperature
+function tempFunc() {
+  let inputNum = parseFloat(document.getElementById('tempInput').value);
+  let fromUnit = document.getElementById('fromTemp').value;
+  let toUnit = document.getElementById('toTemp').value;
+  // Here I used if/else as temperature values are cannot be determined with only 1 arithmetical operation  
+  let result;
+    if (fromUnit === 'celsius' && toUnit === 'fahrenheit') {
+      result = (inputNum * 9) / 5 + 32;
+    } else if (fromUnit === 'celsius' && toUnit === 'kelvin') {
+      result = inputNum + 273.15;
+    } else if (fromUnit === 'fahrenheit' && toUnit === 'celsius') {
+      result = ((inputNum - 32) * 5) / 9;
+    } else if (fromUnit === 'fahrenheit' && toUnit === 'kelvin') {
+      result = ((inputNum - 32) * 5) / 9 + 273.15;
+    } else if (fromUnit === 'kelvin' && toUnit === 'celsius') {
+      result = inputNum - 273.15;
+    } else if (fromUnit === 'kelvin' && toUnit === 'fahrenheit') {
+      result = ((inputNum - 273.15) * 9) / 5 + 32;
+    } else {
+      result = inputNum;
+    }
+      document.getElementById('tempResult').textContent = `Result: ${result.toFixed(3)}`;
+}
