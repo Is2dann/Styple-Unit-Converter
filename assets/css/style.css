@@ -30,3 +30,20 @@ body {
     white-space: nowrap;
     clear: both;
 }
+
+.title, 
+.cat-title { 
+    font-size: 36px;
+    color: rgb(26, 61, 176);
+}
+
+.motto {
+    font-size: 26px;
+}
+
+.subtitle { 
+    margin: 20px; 
+    font-size: 30px; 
+    color: rgb(26, 61, 176);
+    
+}
