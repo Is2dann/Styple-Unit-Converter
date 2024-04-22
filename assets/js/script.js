@@ -56,3 +56,14 @@ document.getElementById('dataButton').addEventListener('click', dataFunc);
       document.getElementById('dataButton').click();
     }
   });
+
+// returns the (length) options convert button to apply the relevant function when clicked
+document.getElementById('lengthButton').addEventListener('click', lengthFunc);
+  // enter key works as click
+  let eInputl = document.getElementById('lengthInput');
+  eInputl.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      document.getElementById('lengthButton').click();
+    }
+  });
