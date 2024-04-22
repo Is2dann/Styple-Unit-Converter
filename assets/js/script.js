@@ -78,3 +78,14 @@ document.getElementById('speedButton').addEventListener('click', speedFunc);
       document.getElementById('speedButton').click();
     }
   });
+
+// returns the (temp) options convert button to apply the relevant function when clicked
+document.getElementById('tempButton').addEventListener('click', tempFunc);
+  // enter key works as click
+  let eInputte = document.getElementById('tempInput');
+  eInputte.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      document.getElementById('tempButton').click();
+    }
+  });
