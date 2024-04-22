@@ -100,3 +100,14 @@ document.getElementById('timeButton').addEventListener('click', timeFunc);
       document.getElementById('timeButton').click();
     }
   });
+
+// returns the (weight) options convert button to apply the relevant function when clicked
+document.getElementById('weightButton').addEventListener('click', weightFunc);
+  // enter key works as click
+  let eInputw = document.getElementById('weightInput');
+  eInputw.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      document.getElementById('weightButton').click();
+    }
+  });
