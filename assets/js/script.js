@@ -187,3 +187,24 @@ function lengthFunc() {
   let result = inputNum * (units[toUnit] / units[fromUnit]);
   document.getElementById('lengthResult').textContent = `Result: ${result.toFixed(3)}`;
 }
+
+  // for Speed
+function speedFunc() {
+  let inputNum = parseFloat(document.getElementById('speedInput').value);
+  let fromUnit = document.getElementById('fromSpeed').value;
+  let toUnit = document.getElementById('toSpeed').value;
+  let units = {
+    ftperm: 54.6806,
+    ftpers: 0.911344,
+    // chose km/h as base value
+    kmperh: 1,
+    knot: 0.539956,
+    lightspeed: 0.0000000009265669311,
+    mileperh: 0.621371,
+    mpers: 0.277777,
+    soundspeedair: 0.000809375,
+    soundspeedwater: 0.000187181,
+  };
+  let result = inputNum * (units[toUnit] / units[fromUnit]);
+  document.getElementById('speedResult').textContent = `Result: ${result.toFixed(3)}`;
+}
