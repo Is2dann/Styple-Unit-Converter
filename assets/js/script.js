@@ -257,3 +257,29 @@ function timeFunc() {
   let result = inputNum * (units[toUnit] / units[fromUnit]);
   document.getElementById('timeResult').textContent = `Result: ${result.toFixed(3)}`;
 }
+
+  // for Weigth
+function weightFunc() {
+  let inputNum = parseFloat(document.getElementById('weightInput').value);
+  let fromUnit = document.getElementById('fromWeight').value;
+  let toUnit = document.getElementById('toWeight').value;
+  let units = {
+    carat: 5,
+    grain: 15.4323,
+    // chose gram as base value
+    gram: 1,
+    kilogram: 0.001,
+    milligram: 1000,
+    ounce: 0.035273,
+    pennyweight: 0.643014,
+    pound: 0.002204,
+    stone: 0.000157473,
+    tonlong: 0.0000009842,
+    tonmetric: 0.000001,
+    tonshort: 0.0000011023,
+    troyounce: 0.0321507,
+    troypound: 0.00267922,
+  };
+  let result = inputNum * (units[toUnit] / units[fromUnit]);
+  document.getElementById('weightResult').textContent = `Result: ${result.toFixed(3)}`;
+}
